@@ -14,7 +14,7 @@
 6. If no two numbers sum up to the target, return an empty list.
 
 ### Time Complexity:
-The time complexity of this algorithm is O(n), where n is the number of elements in the nums list. The for loop iterates through each element once, and the dictionary lookup for rem in visited is an O(1) operation on average.
+- The time complexity of this algorithm is O(n), where n is the number of elements in the nums list. The for loop iterates through each element once, and the dictionary lookup for rem in visited is an O(1) operation on average.
 
 ### Space Complexity:
-The space complexity is O(n) in the worst-case scenario. This is because the visited dictionary can store up to n key-value pairs if each number in the nums list is distinct.
+- The space complexity is O(n) in the worst-case scenario. This is because the visited dictionary can store up to n key-value pairs if each number in the nums list is distinct.
