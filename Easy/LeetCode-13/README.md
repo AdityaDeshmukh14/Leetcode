@@ -1,7 +1,7 @@
 # Roman to Integer
 
 ## Problem Statement
-[Roman to Integer Problem Description] (https://leetcode.com/problems/roman-to-integer/description/)
+[Roman to Integer Problem Description](https://leetcode.com/problems/roman-to-integer/description/)
 
 ## Explaination
 
