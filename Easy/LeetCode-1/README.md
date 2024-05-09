@@ -1,33 +1,20 @@
 # Two Sum
 
 ## Problem Statement
+[Two Sum Problem Description](https://leetcode.com/problems/two-sum/description/)
 
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-<br>
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-<br>
-You can return the answer in any order.
-<br>
+## Explanation
 
-**Example 1:**
-> **Input:** nums = [2,7,11,15], target = 9 <br>
-> **Output:** [0,1] <br>
-> **Explanation:** Because nums[0] + nums[1] == 9, we return [0, 1]. <br>
+### Algorithm:
+1. Initialize an empty dictionary visited to store the indices of visited numbers.
+2. Iterate over the nums list using enumerate to track both the index and the value.
+3. For each number val in nums, calculate the complement rem by subtracting val from the target.
+4. If the complement rem is already in visited, return the indices of the current number val and the complement rem.
+5. Otherwise, add the current number val to visited with its index as the value.
+6. If no two numbers sum up to the target, return an empty list.
 
-### Example 2:
-> **Input:** nums = [3,2,4], target = 6 <br>
-> **Output:** [1,2]
+### Time Complexity:
+The time complexity of this algorithm is O(n), where n is the number of elements in the nums list. The for loop iterates through each element once, and the dictionary lookup for rem in visited is an O(1) operation on average.
 
-### Example 3:
-> **Input:** nums = [3,3], target = 6 <br>
-> **Output:** [0,1] <br>
- 
-### Constraints:
-- 2 <= nums.length <= 104
-- -109 <= nums[i] <= 109
-- -109 <= target <= 109
-- Only one valid answer exists.
- 
-<br>
-
-**Follow-up:** Can you come up with an algorithm that is less than O(n2) time complexity?
+### Space Complexity:
+The space complexity is O(n) in the worst-case scenario. This is because the visited dictionary can store up to n key-value pairs if each number in the nums list is distinct.

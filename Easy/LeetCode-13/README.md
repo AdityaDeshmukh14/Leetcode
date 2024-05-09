@@ -3,7 +3,7 @@
 ## Problem Statement
 [Roman to Integer Problem Description](https://leetcode.com/problems/roman-to-integer/description/)
 
-## Explaination
+## Explanation
 
 ### Algorithm:
 1. Reverse the input Roman numeral string.

@@ -1,33 +1,22 @@
 # Palindrome Number
 
 ## Problem Statement
-Given an integer x, return true if x is a palindrome, and false otherwise.
-<br>
- 
-### Example 1:
+[Palindrome Number Problem Description](https://leetcode.com/problems/palindrome-number/description/)
 
-> **Input:** x = 121 <br>
-> **Output:** true <br>
-> **Explanation:** 121 reads as 121 from left to right and from right to left. <br>
+## Explanation
 
+### Algorithm:
+1. Convert the integer x to a string str_x.
+2. Reverse the string str_x to obtain y.
+3. If the reversed string y is equal to the original string str_x, return True, indicating that the integer x is a palindrome. Otherwise, return False.
 
-### Example 2:
+### Time Complexity:
+    - Converting an integer to a string (str(x)) takes O(log(x)) time, where log(x) is the number of digits in x.
+    - Reversing a string (str_x[::-1]) takes O(n) time, where n is the length of the string.
+    - Comparing two strings (str_x == y) takes O(n) time, where n is the length of the string.
+    - Therefore, the overall time complexity is O(log(x) + n).
 
-> **Input:** x = -121 <br>
-> **Output:** false <br>
-> **Explanation:** From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome. <br>
-
-
-### Example 3:
-
-> **Input:** x = 10 <br>
-> **Output:** false <br>
-> **Explanation:** Reads 01 from right to left. Therefore it is not a palindrome. <br>
- 
-
-### Constraints:
-- -231 <= x <= 231 - 1
- 
-<br>
-
-**Follow up:** Could you solve it without converting the integer to a string?
+### Space Complexity:
+    - Converting an integer to a string (str(x)) requires O(log(x)) additional space to store the string representation of x.
+    - Reversing the string (y = str_x[::-1]) creates a new string y, requiring O(n) additional space, where n is the length of the string.
+    - Therefore, the overall space complexity is O(log(x) + n).
