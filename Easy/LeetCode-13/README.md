@@ -15,9 +15,8 @@
 4. Return num as the result.
 
 ### Time Complexity:
-Reversing the input string takes O(n) time, where n is the length of the input string. The loop iterates through each character in the reversed string, which also takes O(n) time.
-<br>
-Overall, the time complexity is O(n).
+- Reversing the input string takes O(n) time, where n is the length of the input string. The loop iterates through each character in the reversed string, which also takes O(n) time.
+- Overall, the time complexity is O(n).
 
 ### Space Complexity:
 The space complexity is O(1) because the algorithm uses a constant amount of extra space for the value dictionary, num, prev, and the loop variables. The space required does not scale with the size of the input.
