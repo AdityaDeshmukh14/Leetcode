@@ -19,4 +19,4 @@
 - Overall, the time complexity is O(n).
 
 ### Space Complexity:
-The space complexity is O(1) because the algorithm uses a constant amount of extra space for the value dictionary, num, prev, and the loop variables. The space required does not scale with the size of the input.
+- The space complexity is O(1) because the algorithm uses a constant amount of extra space for the value dictionary, num, prev, and the loop variables. - The space required does not scale with the size of the input.
